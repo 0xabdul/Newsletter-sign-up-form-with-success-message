@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Manrope&family=Roboto+Condensed:wght@700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Manrope&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap');
+*,::before,::after{
+     margin:0;
+     padding:0;
+     font-family: 'Roboto', sans-serif;
+}
+html,body{
+    overflow-x: hidden;
+}
+:root{
+    --Dark: hsl(234, 29%, 20%);
+    --Charcoal: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+h1{
+    font-weight:700;
+    padding:1.5rem;
+    font-size:3.5rem;
+    position: relative;
+    top:2rem;
+}
+h2{ 
+    font-weight:500;
+    padding:1.5rem;
+    font-size:1rem;
+    line-height:1.5rem;
+}
+.success-img img{
+    height:1.2rem;
+}
+.success-img{
+    padding:1.5rem;
+    position: relative;
+    top:-1.5rem;
+    line-height:2.2rem;
+}
+.success-content1,.success-content2,.success-content3{
+    position: relative;
+    top:-0.3rem;
+    left:1rem;
+    font-weight:200;
+    font-size:1rem;
+}
+.email{
+    margin-top:-0.4rem;
+}
+label{
+    padding-left:1.5rem;
+    font-weight:600;
+    font-size:0.8rem;
+    position:relative;
+    top:-0.8rem;
+}
+input{
+    padding:1.1rem;
+    margin-left:1.5rem;
+    width:21.5rem;
+    border-radius:0.5rem;
+    border-style:solid;
+    margin:-3rem 0.5rem 1rem 1.5rem;
+    font-size:1rem;
+}
+#btn button{
+    padding:1.2rem;
+    font-weight:600;
+    font-size:1rem;
+    border-style:solid;
+    border:0;
+    margin:-1rem 0.5rem 1rem 1.5rem;
+    background-color:var(--Dark);
+    color:var(--White);
+    border-radius:0.5rem;
+    width:24rem;
+}
+#btn button:hover{
+   background-image: linear-gradient(hsl(4, 100%, 67%),hsl(348, 99%, 66%),hsl(13, 100%, 62%)); 
+   transform: translateY(-1px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#btn button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+#btn button:hover::after {
+    transform: scaleX(98) scaleY(98);
+    opacity: 0;
+}
+#btn button {
+    animation: moveInBottom 3s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+body{
+    background-color: var(--Charcoal);
+    display:grid;
+    place-items:center;
+    margin:0;
+    text-rendering: optimizeSpeed;
+    min-height:100vh;
+}
+#err{
+    position: relative;
+    top:-1.7rem;
+    left:2.5rem;
+    font-weight:100;
+}
+#second-container{
+    display: flex;
+    flex-direction: column;
+    gap:1.8rem;
+    width:20rem;
+    display:none;
+    border-radius:2rem;
+    padding:2rem;
+    background-color:var(--White);
+}
+h4{
+    width:23rem;
+    line-height:1.8rem;
+}
+#container{
+    background-color: var(--White);
+    width:25rem;
+    border-top-left-radius:1.8rem;
+    border-bottom-left-radius:1.8rem;
+    padding:2rem;
+}
+#btn-success button{
+    padding:1.2rem;
+    font-weight:600;
+    font-size:1rem;
+    border:0;
+    background-color:var(--Dark);
+    color:var(--White);
+    border-radius:0.5rem;
+    width:20rem;
+}
+h3{
+    font-size:2rem;
+    width:15rem;
+    line-height:2.8rem;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    display:flex;
+    flex-direction: column;
+}
+
+#main-img{
+    background-color: var(--White);
+    padding:2rem;
+    width:24rem;
+    border-top-right-radius:1.8rem;
+    border-bottom-right-radius:1.8rem;
+}
+#main-img img{
+    height:36rem;
+}
+#wrap{
+    display: flex;
+}
+h3{
+    font-weight:700;
+}
+h4{
+    font-weight:400;
+}
+#em{
+    font-weight:700;
+}
+#main-imgs{
+    display:none;
+}
+.animate__bounceInRight{
+    transition-duration:8s;
+}
+.animate__bounceInLeft{
+    transition-duration:8s;
+}
+.animate__backInDown{
+    transition-duration:8s;
+}
+#btn-success button:hover{
+    background-image: linear-gradient(hsl(4, 100%, 67%),hsl(348, 99%, 66%),hsl(13, 100%, 62%)); 
+    transform: translateY(-1px);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#btn-success button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+#btn-success button:hover::after {
+         transform: scaleX(2.3) scaleY(2.5);
+         opacity: 0;
+}
+#btn-success button {
+         animation: moveInBottom 3s ease-out;
+         animation-fill-mode: backwards;
+}
+     
+     @keyframes moveInBottom {
+         0% {
+             opacity: 0;
+             transform: translateY(30px);
+         }
+     
+         100% {
+             opacity: 1;
+             transform: translateY(0px);
+         }
+     }
+/*Media Qurey for tablet */
+@media(max-width:900px){
+#wrap{
+    display:flex;
+    flex-direction:column-reverse;
+}
+#main-img {
+    display: none;
+}
+#container{
+    border-bottom-left-radius:1.2rem;
+    border-bottom-right-radius:1.2rem;
+}
+#main-imgs{
+    display:block;
+    background-color:var(--White);
+    padding:1.5rem;
+    width:23.5;
+    position: relative;
+    top:2rem;
+    border-top-right-radius:1.2rem;
+    border-top-left-radius:1.2rem;
+}
+#btn button{
+    margin:-1rem 0.5rem 1rem 1.5rem;
+    width:21.5rem;
+}
+#container{
+    border-top-left-radius:0rem;
+    width:22.5rem;
+    margin-top:-0.5rem;
+    margin-bottom:2rem;
+}
+input{
+    width:19rem;}
+h1{
+    top:-2rem;
+    padding:0.6rem;
+    font-size:2.5rem;
+}
+h2{
+    margin-top:-2rem;
+    margin-bottom:1rem;
+    font-size:1rem;
+    padding:0.6rem;
+    width:21rem;
+}
+.email{
+    margin:1rem -1rem -1rem;
+}
+.success-img{
+    padding:0.6rem;
+    top:-1rem;
+    width:20rem;
+    line-height:1.9rem;
+}
+.sub1,.sub2{
+    margin:1.2rem;
+    position:relative;
+    top:-0.5rem;}}
+/*Media Qurey for moblie phones */
+@media (max-width:450px) {
+    #main-imgs{
+        background-color:inherit;
+        top:-1.5rem;
+        right:1.5rem;
+    }
+    #main-imgs img{
+        width:100vw;
+        border-bottom-right-radius:1rem;
+        border-bottom-left-radius:1rem;}
+    h1{
+        top:-2rem;
+        width:80vw;
+        margin-top:1rem;}
+        h2{
+            width:80vw;
+        }
+        .success-img{
+            width:80vw;
+        }
+        #second-container{
+            gap:5rem;
+        }
+        #second-img img{
+            position: relative;
+            top:5rem;
+        }
+        h3{
+            position: relative;
+            top:2rem;
+            width:70vw;
+        }
+        h4{
+            position: relative;
+            top:-1rem;
+            width:80vw;
+        }
+        #btn-success button{
+            width:80vw;
+        }
+        input{
+            width:68vw;
+        }
+        #btn button{
+            width:77vw;
+            font-size:0.9rem;
+        }
+    #container{
+        position: relative;
+        top:-3rem;
+        margin-bottom:-6rem;
+    }
+    body{
+        background-color:var(--White);}}
+/*Media Qurey for moblie phones under 350px Example:iphones */
+@media (max-width:350px) {
+    #btn button{
+        width:79vw; 
+    }
+    .sub1,.sub2{
+        margin:1.2rem;
+        position:relative;
+        top:-0.5rem;
+        display:none;}}
